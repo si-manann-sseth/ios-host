@@ -14,6 +14,9 @@
 		346000B52C930B5E000A9DD1 /* ios_hostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346000B42C930B5E000A9DD1 /* ios_hostTests.swift */; };
 		346000BF2C930B5E000A9DD1 /* ios_hostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346000BE2C930B5E000A9DD1 /* ios_hostUITests.swift */; };
 		346000C12C930B5E000A9DD1 /* ios_hostUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346000C02C930B5E000A9DD1 /* ios_hostUITestsLaunchTests.swift */; };
+		346000D52C93165E000A9DD1 /* ToastModule in Frameworks */ = {isa = PBXBuildFile; productRef = 346000D42C93165E000A9DD1 /* ToastModule */; };
+		346000D72C93179C000A9DD1 /* AlertModule in Frameworks */ = {isa = PBXBuildFile; productRef = 346000D62C93179C000A9DD1 /* AlertModule */; };
+		346000D92C93179C000A9DD1 /* StyleModule in Frameworks */ = {isa = PBXBuildFile; productRef = 346000D82C93179C000A9DD1 /* StyleModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346000D52C93165E000A9DD1 /* ToastModule in Frameworks */,
+				346000D92C93179C000A9DD1 /* StyleModule in Frameworks */,
+				346000D72C93179C000A9DD1 /* AlertModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,11 @@
 			dependencies = (
 			);
 			name = "ios-host";
+			packageProductDependencies = (
+				346000D42C93165E000A9DD1 /* ToastModule */,
+				346000D62C93179C000A9DD1 /* AlertModule */,
+				346000D82C93179C000A9DD1 /* StyleModule */,
+			);
 			productName = "ios-host";
 			productReference = 346000A02C930B5B000A9DD1 /* ios-host.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 346000972C930B5B000A9DD1;
+			packageReferences = (
+				346000CD2C930DC8000A9DD1 /* XCRemoteSwiftPackageReference "ios-component" */,
+			);
 			productRefGroup = 346000A12C930B5B000A9DD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +602,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		346000CD2C930DC8000A9DD1 /* XCRemoteSwiftPackageReference "ios-component" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/si-manann-sseth/ios-component";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		346000D42C93165E000A9DD1 /* ToastModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 346000CD2C930DC8000A9DD1 /* XCRemoteSwiftPackageReference "ios-component" */;
+			productName = ToastModule;
+		};
+		346000D62C93179C000A9DD1 /* AlertModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 346000CD2C930DC8000A9DD1 /* XCRemoteSwiftPackageReference "ios-component" */;
+			productName = AlertModule;
+		};
+		346000D82C93179C000A9DD1 /* StyleModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 346000CD2C930DC8000A9DD1 /* XCRemoteSwiftPackageReference "ios-component" */;
+			productName = StyleModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 346000982C930B5B000A9DD1 /* Project object */;
 }

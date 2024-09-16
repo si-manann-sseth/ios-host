@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import AlertModule
+import StyleModule
+import ToastModule
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            AlertView().systemAlert()
+            Style().basicStyle()
+            ToastView().commonAlert(message: "Hello Manann")
+            AlertView().customAlert(message: "MAC Alert")
         }
         .padding()
     }

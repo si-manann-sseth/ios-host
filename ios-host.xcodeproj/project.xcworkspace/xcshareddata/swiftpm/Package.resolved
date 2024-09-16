@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ios-component",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/si-manann-sseth/ios-component",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2475be89c6e03d273bc1b8c4ee2df4643f4f0ba8"
+      }
+    }
+  ],
+  "version" : 2
+}
